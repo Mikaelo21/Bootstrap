@@ -1,0 +1,255 @@
+<!DOCTYPE html> <!--Trabalho de: Mikael Alano, Rayana e Gabriel-->
+<html lang="pt-BR"> <!--muda a linguagem da página-->
+
+<head>
+
+    <link rel="stylesheet" href="css/style.css"> <!--adiciona o css para a página html-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verde Vivo</title>
+    <link rel="icon"
+        href="data:image/jpeg;base64,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"
+        type="image/png"> <!--muda o icone da pagina-->
+</head>
+
+<body>
+    <a id="inicio"></a><!--adiciona um ponto de retorno pra página-->
+    <br>
+
+    <hr style="border:3px solid green; width: 70%;"> <!--adiciona uma linha verde na pagina-->
+    <h1 id="verde">VERDE VIVO</h1> <!--é o titulo da página, também verde-->
+    <hr style="border: 3px solid green; color: green; width: 90%;"><!--adiciona uma linha verde que separa o titulo do resto-->
+
+    <div
+        style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; gap: 40px; margin-top: 20px;"> 
+        <div style="text-align: left;">
+            <ul style="color: green;"><!--adiciona uma lista não ordenada-->
+                <li class="animacao1"><a href="#quemsomos" target="_self" style="color: green; font-weight: bold;">Quem
+                        Somos</a></li><br><!--link que leva pro proprio site-->
+                <li class="animacao1"><a href="#objetivo" target="_self" style="color: green; font-weight: bold;">Nosso
+                        Objetivo</a></li><br><!--link que leva pro proprio site-->
+                <li class="animacao1"><a href="#projetos" target="_self"
+                        style="color: green; font-weight: bold;">Projetos</a></li><br><!--link que leva pro proprio site-->
+                <li class="animacao1"><a href="#participar" target="_self"
+                        style="color: green; font-weight: bold;">Participe do Projeto</a></li><br><!--link que leva pro proprio site-->
+                <li class="animacao1"><a href="#contato" target="_self"
+                        style="color: green; font-weight: bold;">Contato</a></li><br><!--link que leva pro proprio site-->
+            </ul>
+        </div>
+
+        <div>
+            <!--serve para adicionar um video com animação no site-->
+            <iframe class="animacao" width="560" height="315"
+                src="https://www.youtube.com/embed/MgZyRqrsdiI?si=WMYTZkcYIsF2Fvg5" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!--o fieldset serve para adicionar uma borda em voilta do texto por estética-->
+    <fieldset
+        style="border: 3px solid green; max-width: 800px; margin: 30px auto; padding: 20px; background-color: #f0fff0;">
+        <legend style="font-weight: bold; font-size: 18px;" id="quemsomos">Quem somos:</legend><!--serve para fazer meio que um titulo entre a borda do fieldset-->
+        <div class="texto-central"> <!--deixa o texto no centro do fieldset-->
+            <p id="centro">Nossa ONG Verde Vivo, nasceu do desejo de proteger e revitalizar o meio ambiente. Trabalhamos
+                com paixão para promover a sustentabilidade, restaurar ecossistemas e conscientizar comunidades sobre a
+                importância de preservar a natureza. Acreditamos que pequenas ações podem gerar grandes impactos e
+                juntos, construímos um futuro mais verde e vivo para todos.</p>
+        </div>
+    </fieldset>
+    <br>
+    <a id="objetivo"></a>
+    <h1 class="refloresta" style="color: green; font-size: bold;">Nosso Objetivo</h1> <!--serve para adicionar um titulo sobre o assunto na pagina-->
+
+    <p class="p" style="color: green;">A ONG Vida Verde tem como objetivo promover a preservação do meio ambiente por <!--serve para adicionar um parágrafo que fica em baixo do titulo-->
+        meio de ações sustentáveis, educação ambiental e engajamento comunitário. Buscamos construir um futuro mais
+        equilibrado, onde o ser humano e a natureza coexistam em harmonia. Atuamos em projetos de reflorestamento,
+        reciclagem, proteção da fauna, uso consciente da água e mobilidade sustentável, sempre com foco na
+        conscientização e participação ativa da sociedade.</p>
+    <br>
+    <fieldset
+        style="border: 3px solid green; max-width: 800px; margin: 30px auto; padding: 20px; background-color: #f0fff0;"> <!--fieldset para fazer uma borda em volta dos itens dentro do fieldset-->
+        <legend style="font-weight: bold; font-size: 18px;" id="projetos">Projetos:</legend> <!--serve para fazer meio que um titulo entre a borda do fieldset-->
+        <ul class="linha4"><!--adiciona uma lista não ordenada no site-->
+            <li class="animacao1"><a id="a" href="refloresta.html"
+                    target="_self">🌱ReflorestaVida</a></li><br><!--adiciona um link que leva pra propria pagina dentro de uma lista não ordenada-->
+            <li class="animacao1"><a id="a" href="recicla.html" target="_self">♻️Recicla
+                    Comunidade</a></li><br><!--adiciona um link que leva pra propria pagina dentro de uma lista não ordenada-->
+            <li class="animacao1"><a id="a" href="fauna.html" target="_self">🐾Guardiões da
+                    Fauna</a></li><br><!--adiciona um link que leva pra propria pagina dentro de uma lista não ordenada-->
+            <li class="animacao1"><a id="a" href="agua.html" target="_self">💧Água Limpa, Vida
+                    Longa</a></li>
+        </ul>
+    </fieldset>
+
+    <br><!--adiciona uma espaço à página-->
+    <h1 id="refloresta" style="margin-left: 50px; max-width: 600px; font-weight: bold;">🌱ReflorestaVida</h1><!--adiciona um titulo na página-->
+    <p id="p">Projeto focado na recuperação de áreas desmatadas por meio do plantio de árvores nativas da região. A ação <!--adiciona um parágrafo à página, logo após do titulo-->
+        é feita com a ajuda de voluntários, escolas e agricultores parceiros. Além do plantio, o projeto realiza
+        oficinas sobre reflorestamento, manejo sustentável e preservação de nascentes próximas. O objetivo é restaurar a
+        biodiversidade e promover uma conexão entre a comunidade e a natureza.<br><br><a class="animacao"
+            href="refloresta.html" style="font-size: 25px; color: rgb(6, 117, 6);">Saiba
+            Mais...</a></p> <!--adiciona um link para saber mais que leva a outra página-->
+    <br><br><br><!--adiciona 3 espaços entre os itens da página-->
+    <hr style="border: 1px solid green; color: green; width: 90%;"> <!--adiciona uma linha que divide os itens da página-->
+
+    <br><br><!--adiciona 2 espaços à página-->
+    <a id="recicla"></a> <!--adiciona um ponto de retorno à essa parte da página-->
+    <h1 class="refloresta" style="color: rgb(22, 92, 22);">♻️Recicla Comunidade</h1> <!--adiciona um titulo na página-->
+
+    <p class="p" style="color: rgb(22, 92, 22);">Este projeto busca incentivar a coleta seletiva e a correta separação <!--adiciona um paragraqfo pro titulo-->
+        do lixo em bairros com pouca estrutura ambiental. A ONG realiza palestras, oficinas e ações educativas, além de
+        montar pontos de coleta de recicláveis e apoiar cooperativas locais de catadores. O Recicla Comunidade ajuda a
+        reduzir o impacto ambiental, gerar renda e transformar hábitos por meio da conscientização. <br><br><a
+            class="animacao" href="recicla.html"
+            style="font-size: 25px; color: rgb(4, 63, 4);">Saiba Mais...</a></p> <!--adiciona um link que leva para o assunto relacionado-->
+    <br><br><br><!--adiciona e espaço entre os itens da página-->
+    <hr style="border: 1px solid green; max-width: 90%;"> <!--adiciona uma linha para separar os itens internos da página-->
+    <br><br><!--adiciona 2 espaços entre os itens da página-->
+    <a id="guardioes"></a><!--adiciona um ponto de retorno pra essa parte da área-->
+    <h1 class="refloresta" style="color: rgb(216, 142, 4);"><!--adiciona uma tag que foi usada como titulo na pagina-->
+  🐾Guardiões da Fauna
+</h1>
+<!-- título do projeto "Guardiões da Fauna", destacado com emoji e cor laranja -->
+
+<p class="p" style="color: rgb(216, 142, 4);"><!--adiciona um paragrafo com a cor laranja-->
+  Com foco na proteção de animais silvestres, esse projeto combate o tráfico ilegal de espécies e promove a conservação da fauna local. Atua com educação ambiental nas escolas, campanhas nas redes sociais e ações de denúncia anônima em parceria com órgãos ambientais. Os voluntários também participam de trilhas de monitoramento, resgate e soltura de animais em áreas protegidas.
+  <br><br>
+  <a class="animacao" href="fauna.html" style="font-size: 25px; color: rgb(187, 113, 1);"><!--cria um link que leva a outro local da pagina sobre o projeto Guardioões da Fauna; Junto a uma class que da uma animacao pro saiba mais-->
+    Saiba Mais...
+  </a>
+</p>
+<!-- parágrafo explicativo sobre o projeto + link "Saiba Mais" para a página fauna.html -->
+
+<br><br><br><!--gera 3 espaços entre os itens-->
+
+
+<hr style="border: 1px solid green; max-width: 90%;"><!--cria uma linha verde que separa os itens de cima do de baixo-->
+
+
+<br><br><!--gera 2 espaços entre os itens-->
+
+<a id="agua"></a><!--tag de aconra para usar o a href dentro do site e vir para essa área-->
+
+
+<h1 class="refloresta" style="color: cornflowerblue; font-weight: bold; font-size: bold;">
+  💧Água Limpa, Vida Longa
+</h1>
+<!-- título do projeto "Água Limpa, Vida Longa", em azul com emoji -->
+
+<p class="p" style="color: cornflowerblue;">
+  Voltado à preservação de rios, lagos e nascentes, esse projeto realiza mutirões de limpeza, plantio de vegetação ciliar e oficinas sobre o uso consciente da água. Em parceria com escolas, moradores e agricultores, o projeto monitora a qualidade da água e atua contra despejos irregulares. O objetivo é garantir o acesso à água limpa para as gerações futuras.
+  <br><br>
+  <a class="animacao" href="agua.html" style="font-size: 25px; color: rgb(4, 30, 63);"><!--cria um link que leva a outro local da pagina sobre o projeto agua Limpa, Vida Longa; Junto a uma class que da uma animacao pro saiba mais-->
+    Saiba Mais...
+  </a>
+</p>
+
+
+<br><br><br>
+
+<hr style="border: 1px solid green; max-width: 90%;"><!--o hr cria uma linha e o style faz com que ela fique verde-->
+
+
+<br><br>
+<br><br>
+
+<a style="display: block; text-align: center;"><!-- imagem centralizada com estilo responsivo, o display block faz a imagem ficar centralizada obrigatoriamente e o class animacao cria uma animacao pequena quando passa o mouse em cima -->
+  <img class="animacao"
+       src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDwkvRcOoGMm3f8VduYyw2CLjazeDMJtLquw&s"
+       alt=""
+       style="max-width: 100%; height: auto;">
+</a>
+
+
+<fieldset style="border: 3px solid green; max-width: 800px; margin: 30px auto; padding: 20px; background-color:#f0fff0;">
+  <legend id="#participar">Participe do projeto:</legend>
+  <!-- título do formulário dentro da borda -->
+
+  <a id="participar"></a><!--tag de acora para voltar nessa area do site usando um a href de dentro da página-->
+  
+
+  <form action="#" method="post" autocomplete="off"><!--tag para iniciar um formulário-->
+
+    <label style="color: rgb(8, 53, 8);" for="fname">Nome completo:</label><br><!--label faz com que apareça um texto pedindo o nome completo do usuario-->
+    <input class="animacao" type="text" id="fname" name="fname" required
+           style="border-radius: 9px; width: 50%;"><br><br>
+    <!-- campo de nome -->
+
+    <label for="email">Digite seu email:</label><br><!--label faz com que apareça um texto pedindo o email do usuario-->
+    <input class="animacao" type="email" id="email" name="email" required
+           style="border-radius: 9px; width: 50%;"><br><br>
+    <!-- campo de email -->
+
+    <label for="">Telefone:</label><br><!--label faz com que apareça um texto pedindo o telefone do usuario-->
+    <input class="animacao" type="tel" id="telefone" name="telefone"
+           placeholder="(99) 9999-9999" required style="border-radius: 2px; width: 12%;"><br><br>
+    <!-- campo de telefone -->
+
+    <label id="input" for="data">Data de nascimento:</label><br><!--label faz com que apareça um texto pedindo a data de nascimento do usuario-->
+    <input class="animacao" type="date" id="input" name="data"
+           min="1900-01-01" max="2018-05-23" style="width: 12%;"><br><br>
+    <!-- campo de data de nascimento -->
+
+    <label class="animacao" for="genero">Escolha seu Gênero:</label><br><!-- seleção de gênero -->
+    <select class="animacao" style="color: green; border-radius: 10px; width: 12%;" id="genero" name="genero"><!--adiciona uma seleção de gênero, junto com uma animacao -->
+      <option value="Masculino">Masculino</option><!-- opções de gênero -->
+      <option value="Feminino">Feminino</option><!-- opções de gênero -->
+      <option value="Outro">Outro</option><!-- opções de gênero -->
+    </select><br><br>
+    
+
+    <textarea class="animacao" name="message" rows="3" cols="40"
+              placeholder="Caso queira comentar algo:" style="width: 40%;"></textarea><br><br> <!--text area serve para um comentário opcional, junto com uma animação quando passa o mouse em cima -->
+   
+
+    <label class="animacao1" id="input" for="M"><!--o class animacao1 adiciona uma animação quando passa o mouse em cima do item-->
+      <input class="animacao" type="radio" id="input" name="robo"
+             value="M" required>para ver se você não é um robô
+    </label><br><br><!-- verificação não funcional para testar se é humano ou não -->
+    
+
+    <button class="animacao" type="submit"
+            onclick="alert('Formulário enviado, agradecemos o interesse :P')"
+            style="border-radius: 10px; width: 8%;">Enviar</button><!--tag de botção que envia as informações que estão dentro do formulário(não funcional), com algumas tags para alterar o tamanho-->
+    <button class="animacao" type="reset" value="apagar"
+            style="border-radius: 10px; width: 8%;">Excluir</button><!--tag de botão que reseta os itens dentro do formulário(funcional)-->
+    <!-- botões enviar e resetar -->
+  </form>
+</fieldset>
+
+<div class="barra"><!-- barra de navegação e contato -->
+  <ol id="ol" class="linha2" style="text-align: left;"> <!-- lista ordenada para links e contato -->
+    <a id="final" target="_self"></a>
+    
+
+    <li class="coisa2"><a href="#inicio"><i class="fab fa-earth"></i>Inicio</a></li>
+    <a><li class="coisa2"><a href="https://www.facebook.com" target="_blank"> <!--adiciona um link que leva para o facebook da ong (não funcional)-->
+      <i class="fab fa-facebook" id="poilo4"></i>Facebook</a></li></a>
+    <a><li class="coisa2"><a href="https://www.youtube.com" target="_blank"><!--adiciona um link que leva para o youtube da ong (não funcional)-->
+      <i class="fab fa-youtube"></i>Youtube</a></li></a>
+    <a><li class="coisa2"><a href="https://x.com/?lang=pt" target="_blank"><!--adiciona um link que leva para o Twitter da ong (não funcional)-->
+      <i class="fab fa-twitter"></i>Twitter</a></li></a>
+    <li class="coisa2"><a href="https://www.instagram.com" target="_blank"><!--adiciona um link que leva para o Instagram da ong (não funcional)-->
+      <i class="fab fa-instagram"></i>Instagram</a></li>
+    <a><li id="poilo3" class="coisa2"><i class="fab fa-whatsapp"></i>
+      Telefone:(51) 9934-8903</li></a>
+    <!-- links da barra de navegação e contato -->
+  </ol>
+
+  <div class="linha">
+    <a id="contato"></a> <!--ponto de retorno da página-->
+    <div class="coisa">2025 © Vida Verde™ •</div><!--não sei o que é mas todos os sites que eu vi usavam então eu coloquei-->
+    <div class="linha3"><div class="coisa3"></div></div>
+  </div>
+
+  <div class="lin"><!--usei para adicionar uma linha especifica dentro do retangulo-->
+    <div id="poilo2" class="centr"><!--usei o id poilo para deixar o itens dentro num tamanho que eu queria-->
+      Rua Capitão João Dorneless 515, Centro, Gravataí-RS CEP:94180-295
+    </div>
+    <div id="poilo" class="centr">CNPJ: 62.322.442/0001-01</div><!--usei o id poilo para deixar o itens dentro num tamanho que eu queria-->
+    <!-- endereço e CNPJ-->
+  </div>
+</div>
+</body>

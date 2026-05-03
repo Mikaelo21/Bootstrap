@@ -1,0 +1,270 @@
+/*Trabalho de: Mikael Alano, Rayana e Gabriel*/
+/*deixa todo elemento com o id="verde" centralizado e verde*/
+#verde {
+    color: green;
+    text-align: center;
+}
+
+/*centraliza qualquer coisa com o id="centro"*/
+#centro {
+    text-align: center;
+}
+
+/*muda a cor do fundo do site, tira a maegem e o espaço interno*/
+body {
+    background-color: #e6f5e9;/*muda a cor do funda da página para um verde bem clarinho*/
+    /*muda a cor do fundo para um verde bem claro*/
+    margin: 0; /*tira a margem do site*/
+    padding: 0; /*tira o espaço interno do site*/
+}
+
+/*barra do final da pagina, usei o tamanho, cor do fundo, espaçamento interno, font bold e o margin para o espaço fora do elemento*/
+.barra {
+    width: 94%;
+    background-color: rgb(18, 83, 18);/*muda a cor do funda da barra para verde escuro*/
+    color: white; /*muda a cor do texto para branco*/
+    padding: 40px; /*faz com que o espço interno seja de 40 pixels*/
+    font-weight: bold;/*muda a cor da fonte para bold*/
+    margin: 0 auto;/*faz com que a a barra fique centralizada na página*/
+    /*centraliza as coisas*/
+}
+
+/*deixa as barras em volta do que ta dentro do que esta no fieldset verde */
+legend {
+    color: green; /*muda a cor do texto para verde*/
+}
+
+/*alinha os itens para a direita com espaçamento */
+.lin {
+    justify-content: end; /*faz com que os itens se organizem para a direita da página*/
+    gap: 20px;/*define o espaçamento entre os itens*/
+    padding: 3px;/*define o tamanho do espaço interno*/
+    margin-top: 20px;/*muda o espaço entre cada item sendo do lado ou de cima dele*/
+}
+/*faz parte da animacao*/
+.animacao {
+    transition: all 0.4s ease; /*adiciona uma transição suave, o all serve para dizer que a transição sera aplicada em todos os itens que forem seleconados, o 0.4s define o tempo qe isso irá acontecer e o ease especifica a função de tempo da transição, criando um efeito de aceleração ou desaceleração*/
+}
+
+.animacao:hover {/*adiciona o efeito de passar o mouse, serve como complemento pro class animacao*/
+    transform: scale(1.05);/*ao passar o mouse, o elemento aumenta de tamanho em 5%*/
+    box-shadow: 0 4px 16px rgba(0, 128, 0, 0.2);/*adiciona uma sombra atras do item quando passsa o mouse em cima junto da animação*/
+}
+.hr10{
+    border: 1px solid green;/*aumenta a espessura da linha e faz ela ficar verde*/
+    max-width: 90%;/*define o tamanho máximo da linha, ou seja, ela não vai ocupar toda a largura do site*/
+}
+
+.animacao1 {
+    transition: all 0.4s ease; /*adiciona uma transição suave, o all serve para dizer que a transição sera aplicada em todos os itens que forem seleconados, o 0.4s define o tempo qe isso irá acontecer e o ease especifica a função de tempo da transição, criando um efeito de aceleração ou desaceleração*/
+}
+
+.animacao1:hover /*adiciona o efeito de passar o mouse, serve como complemento pro class animacao 1*/{
+    transform: scale(1.05);/*ao passar o mouse, o elemento aumenta de tamanho em 5%*/
+}
+
+/*organiza as coisas para a direita podendo quebrar a linha se precisar*/
+.linha4 {
+    display: flex; /*faz com que os itens sejam organizados lado a lado */
+    flex-wrap: wrap;/*faz com que o itens possam ir pra uma nova linha caso não caibam na linha atual*/
+    justify-content: left;/*alinha os itens para a esquerda*/
+    gap: 20px;/*define o espaçamento entre os itens*/
+    padding: 3px; /*define o tamanho interno do item*/
+    margin-top: 20px;/*define o espaço entre os  itens e os elementos acima deles*/
+    list-style-type: none;/*tira as decorações*/
+}
+
+/*elemento com a font bold junto a cor verde*/
+.cois {
+    font-weight: bold;/*muda a fonte para */
+    color: green;/*muda a cor para verde*/
+}
+
+
+.linha {
+    display: flex;/*faz com que os itens sejam organizados lado a lado */
+    justify-content: center;/*alinha os itens para o centro*/
+    gap: 20px;/*define o espaçamento entre os itens*/
+    padding: 3px;/*define o espaço interno do ite*/
+    margin-top: 20px;/*define o espaço entre os itens e os elementos acima deles*/
+}
+
+/*deixa os itens alinhados para direita*/
+.linha3 {
+    display: flex; /*faz com que os itens sejam organizados lado a lado */
+    justify-content: right; /*alinha os itens para a direita*/
+    gap: 10px; /*define o espaçamento entre os itens*/
+    margin-top: 30px; /*define o espaço entre os itens e os elementos acima deles*/
+}
+
+/*define o espaçamento interno junto com a fonte bold*/
+.coisa3 {
+    padding: 5px 15px; /*define o espaço interno do elemento*/
+    font-weight: bold;  /*deixa a fonte em bold*/
+}
+
+#poilo{
+    font-size: 11px; /*ajuste de tamanho da fonte*/
+}
+#poilo2{
+    font-size: 12px; /*ajuste de tamanho da fonte*/
+}
+#poilo3{
+    font-size: 14px; /*ajuste de tamanho da fonte*/
+}
+#poilo4{
+    font-size: 18px; /*ajuste de tamanho da fonte*/
+}
+
+/*remove a decoração do texto*/
+#text {
+    text-decoration: none;
+}
+
+/*muda a cor do fundo para verde junto do espaçamento intero e redondo com o border radius, com a font ''bold''*/
+.coisa {
+    background-color: rgb(5, 107, 5);
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+/*define o espaçamento interno junto com a fonte ''bold''*/
+.coisa2 {
+    padding: 5px 15px; /*define o espaço interno do elemento*/
+    font-weight: bold; /*deixa a fonte em bold*/
+    transition: all 0.4s ease; /*adiciona uma transição suave, o all serve para dizer que a transição sera aplicada em todos os itens que forem seleconados, o 0.4s define o tempo qe isso irá acontecer e o ease especifica a função de tempo da transição, criando um efeito de aceleração ou desaceleração*/
+    /*adiciona uma transição suave*/
+}
+
+.coisa2:hover {
+    transform: scale(1.05); 
+    /*aumenta o tamanho do elemento ao passar o mouse*/
+
+}
+
+/*linha que alinha os itens da esquerda com pouco espaçamento*/
+.linha2 {
+    display: flex; /*faz com que os itens sejam organizados lado a lado */
+    justify-content: left; /*alinha os itens para a esquerda*/
+    gap: 4px; /*define o espaçamento entre os itens*/
+    margin-top: 10px; /*define o espaço entre os itens e os elementos acima deles*/
+}
+
+/*centraliza o texto no centro*/
+.centr {
+    text-align: center; /*centraliza o texto*/
+}
+
+/*centraliza o texto no centro*/
+.central {
+    text-align: center; /*centraliza o texto*/
+}
+
+/*deixa todos os texto de label na cor verde*/
+label {
+    color: green; /*muda a cor do texto para verde*/
+}
+
+/*deixa o botão branco com o fundo verde junto do cursor com mão*/
+button {
+    color: white; /*muda a cor do texto para branco*/
+    background-color: green; /*muda a cor do fundo para verde*/
+    cursor: pointer; /*muda o cursor do mouse para uma mãozinha quando passar em cima do botão*/
+}
+
+/* deixa o cursor do mouse igual uma mão pra usar no select(usei só pra deixar mais bonito)*/
+select {
+    cursor: pointer;
+}
+
+/*deixa o cursor do mouse igual uma mão pra usar no input(usei só pra deixar mais bonito)*/
+#input {
+    cursor: pointer;
+}
+
+/*deixa a cor dos links brancos e sem detalhes em baixo*/
+a{
+    color: white;/*muda a cor do texto para branco*/
+    text-decoration: none;/*tira a decoração do texto*/
+}
+
+/*id que faz a cor do a href ficar verde e sem detalhes em baixo*/
+#a {
+    color: green;/*muda a cor do texto para verde*/
+    list-style-type: none;/*apaga a decoração do texto*/
+}
+
+/*remove os detalhes de todas as listas ordeaadas*/
+ol {
+    list-style-type: none;/*remove a decoração da lista*/
+    padding-left: 0; /*tira o espaço interno da lista*/
+}
+
+/*item para deixar a frase azul*/
+#li {
+    color: blue;/*muda a cor do texto para azul*/
+}
+
+/*classe para deixar com a cor verde a frase*/
+#refloresta {
+    color: green;/*muda a cor do texto para verde*/
+}
+
+/*classe para deixar a frase com limite de inicio e fim com a fonte em ''bold''*/
+.refloresta {
+    margin-left: 50px; /*alinha o texto a esquerda com uma margem de 50px */
+    max-width: 100%;/*define o limite máximo do parágrafo*/
+    font-weight: bold;/*deixa a fonte em bold*/
+}
+
+/*todos os paragrafos ficam verde e com a fonte em ''bold''*/
+p {
+    color: green;/*muda a cor do texto para verde*/
+    font-weight: bold;/*deixa a fonte em bold*/
+}
+
+/*parágrafo com limite de inicio e final, com cor verde e a fonte sendo ''bold''*/
+#p {
+    margin-left: 10%;/*alinha o texto a esquerda com uma margem de 10% */
+    max-width: 80%;/*define o limite máximo do parágrafo*/
+    font-weight: bold;/*muda a fonte para bold*/
+    color: green;/*muda a cor do texto para verde*/
+}
+
+
+.img {
+    text-align: center;/*centraliza a imagem*/
+}
+
+/*classe de parágrafo para deixar o site alinhado como eu quero*/
+.p {
+    margin-left: 10%;/*alinha o texto a esquerda com uma margem de 10% */
+    max-width: 80%;/*define o limite máximo do parágrafo*/
+    font-weight: bold;/*deixa a fonte em bold*/
+}
+
+/*adapta o site para telas diferentes ou dispositivos diferentes, estava pedindo para por mas eu não consegui entender sobre deixar o site resposivo */
+@media (max-width: 768px) {
+    .linha4 {
+        flex-direction: column;/*faz com que os itens sejam organizados em coluna*/
+        align-items: center;/*alinha as coisas no centro*/
+       
+    }
+
+    #p,
+    .p {
+        margin-left: 0;/*tira a margem esquerda do parágrafo*/
+        
+        max-width: 100%; /*ocupa a largura disponivel no site*/
+       
+    }
+
+    .barra {
+        padding: 20px;/*diminui o espaço interno da pa´gina*/
+    }
+
+    button {
+        width: 100%;/*faz com que os botões ocupem toda a barra no celular*/
+    }
+}

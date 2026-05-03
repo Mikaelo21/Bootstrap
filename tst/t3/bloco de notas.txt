@@ -1,0 +1,16 @@
+details[open] ul{
+    max-height: 400px;
+}
+
+/* ITENS */
+details li{
+    padding: 10px;
+    transition: 0.2s;
+}
+
+/* hover itens */
+details li:hover{
+    background: #000000;
+    padding-left: 15px;
+    border-radius: 10px;
+}

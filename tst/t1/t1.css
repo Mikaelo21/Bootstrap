@@ -1,0 +1,31 @@
+body{
+    background-color: rgb(87, 0, 0);
+}
+#t1{
+    color: white;
+    text-align: center;
+    background-color: blueviolet;
+}
+#t2{
+    color: white;
+    text-align: center;
+    background-color: blueviolet;
+    width: 100%;
+}
+button{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    flex-wrap: wrap;
+    
+}
+.db{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10%;
+    align-items: center;
+
+}
