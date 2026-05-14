@@ -222,7 +222,7 @@ details[open] {
     z-index: 2000;
     display: flex;
     justify-content: center;
-    max-width: 70%;
+    max-width: 80%;
 }
 
 @keyframes slideDown {
